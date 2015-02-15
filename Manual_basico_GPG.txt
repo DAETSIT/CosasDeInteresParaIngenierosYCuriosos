@@ -1,0 +1,61 @@
+Conseguir gpg:
+    https://www.gnupg.org/download/index.en.html
+
+Generar Clave GPG mediante terminal:
+    gpg --gen-key
+
+    elegir:
+        RSA y RSA (predeterminado)
+        ¿De qué tamaño quiere la clave? se elige el mayor
+        El período de validez de la clave. 1y
+        Nombre y apellidos: Podéis usar el que queráis, pero esto es
+                            utilizable en el mundo real (Profesional).
+        Dirección de correo electrónico: lo mismo
+        Comentario: Clave Para DAETSIT
+
+Exportar la clave:
+    gpg -k os muestra las claves que tengáis
+        En la clave pondrá algo como esto:
+            pub 4096R/32DF4CA3 2015-02-15 [[caduca: 2016-02-15]]
+        32DF4CA3 es el <id> de mi clave
+        lo que os ponga a vosotros lo tenéis que poner para el export
+
+    gpg --output VuestroNombrePub.gpg --export <id>
+
+
+Importar la clave de otros:
+    gpg --import CPub.gpg donde CPub.gpg sera el nombre de la clave que
+    queráis importar.
+
+Cifrar con la clave pública: -> Solo lo puede leer el destinatario
+(el dueño de la clave privada)
+    gpg -e --recipient <id> Document.txt
+
+Descifrar con la clave privada:
+    gpg -d Documento.txt.gpg
+
+Firmar un documento:
+    gpg -u <id> --output firmar.txt.gpg --sign firmar.txt
+
+Verificar un documento:
+    gpg --verify firmar.txt.gpg
+
+
+La Firma digital es un procedimiento con la misma validez que la firma
+manuscrita. Permite comprobar que los archivos son de quien dicen ser,
+y que el contenido no ha sido alterado.
+El cifrado permite las comunicaciones entre emisor y receptor de forma
+que un tercero no pueda ver el contenido y entenderlo.
+El formato RSA consiste en un par de claves una publica y otra privada:
+La clave publica es para compartirla con el mundo, de esta forma
+permitimos a los demás identificarnos y proteger nuestros documentos
+contra alteraciones que se hagan en nuestro nombre.
+La clave privada es el secreto a proteger y nos permitirá firmar,
+y descifrar los mensajes.
+Lo que cifra la clave publica lo descifra la privada y viceversa lo que
+cifra la privada lo descifra la publica.
+los pares de claves en los unix y linux están en la carpeta .gnupg
+
+
+
+
