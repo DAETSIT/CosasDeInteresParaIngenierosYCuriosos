@@ -1,0 +1,78 @@
+GITHUB es un repositorio git vía web.
+Esta pensado para el control de versiones por lo que es muy útil para el 
+trabajo colaborativo.
+Aquí os dejo una dirección web donde podéis encontrar información: 
+http://git-scm.com/doc
+
+*********************************************
+*Mini-resumen de lo mas básico para  operar:*
+*********************************************
+Instalando git en Ubuntu:
+    sudo apt-get install git-core
+Para una gestión gráfica:
+    sudo apt-get install gitk git-gui git-doc
+
+Colaborar en un repositorio: 
+    Vais a la pagina web del repositorio, y hacéis un fork de el. 
+    El fork crea una nueva rama que os permitirá editarlo. 
+    
+    Después os hacéis una copia del repositorio con git clone y 
+    la dirección que pone a la derecha para clonar.
+    
+    Una vez tengáis la carpeta hay que hacer:
+        git remote add upstream git@github.com:DAETSIT/ElNombreDelRepositorio.git
+        Ahora ya podéis usar la carpeta como un git normal y se os bajaran los 
+        cambios de la principal .   
+        
+    Para integrar los cambios  después de haber cambiados los forks (las copias vuestras)
+    Se hace clic en Pull Requests!, una vez el cambio se haya aprobado 
+    aparecerá todo integrado.   
+             
+Usando git: siempre en la carpeta
+    Para crear una rama (solo la primera vez):
+        git checkout -b <borrador>
+        
+    Para cambiar de rama (siempre es mejor trabajar en una rama borrador):
+       git checkout NombreDeLaRama
+   
+    Para volver al pasado (solo vuelves en modo lectura)
+       git checkout TrocitoDelCodigoQueDaGitLogEnCommit
+       ej:  git checkout 8461d8b0af
+       para poder editar tienes que crear una rama con git branch NombreDeLaRama
+    
+    Listar las ramas y ver cual esta activa (activa => *):
+        git branch
+        
+    Fusionar la rama Master con el principal web(upstream)(bajar los cambios):
+        git pull upstream master
+        
+    Fusionar la rama borrador con la master(añadir a master los cambio):
+        git merge --squash <borrador>
+            la opción --squash es para  comprimir las etiquetas e la 
+            rama borrador y que aparezcan solo como 1 en el master.
+        
+    Ver la situación de los ficheros:
+        git status
+        
+    Añadir un fichero:
+        git add NombreFichero
+    Añadir todos los ficheros del directorio:
+        git add .
+        
+    Para guardar el estado (hacerlo solo en la rama borrador principalmente):
+        git --commit-all -m 'comentario que identifique el cambio' 
+        
+    Para deshacer el ultimo commit antes de subirlo:
+        git commit --amend
+            
+    Para subir el cambio al fork de gitHub:
+        git push
+      
+        
+    Para ver historial de cambios:
+        git log
+        para salir solo hay que escribir q
+        
+   
+        
+        
