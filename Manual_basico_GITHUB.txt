@@ -1,5 +1,5 @@
 GITHUB es un repositorio git vía web.
-Esta pensado para el control de versiones por lo que es muy útil para el 
+Esta pensado para el control de versiones, por lo que es muy útil para el 
 trabajo colaborativo.
 Aquí os dejo una dirección web donde podéis encontrar información: 
 http://git-scm.com/doc
