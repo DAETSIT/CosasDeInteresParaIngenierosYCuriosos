@@ -66,8 +66,7 @@ Usando git: siempre en la carpeta
         git commit --amend
             
     Para subir el cambio al fork de gitHub:
-        git push
-      
+        git push      
         
     Para ver historial de cambios:
         git log
