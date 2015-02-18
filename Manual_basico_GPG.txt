@@ -20,7 +20,7 @@ Exportar la clave:
         32DF4CA3 es el <id> de mi clave
         lo que os ponga a vosotros lo tenéis que poner para el export
 
-    gpg --output VuestroNombrePub.gpg --export <id>
+    
 
 
 Importar la clave de otros:
