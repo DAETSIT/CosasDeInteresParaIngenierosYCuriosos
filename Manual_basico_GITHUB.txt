@@ -45,11 +45,14 @@ Usando git: siempre en la carpeta
         
     Fusionar la rama Master con el principal web(upstream)(bajar los cambios):
         git pull upstream master
+        git fetch
         
     Fusionar la rama borrador con la master(añadir a master los cambio):
         git merge --squash <borrador>
-            la opción --squash es para  comprimir las etiquetas e la 
+            la opción --squash es para  comprimir las etiquetas en la 
             rama borrador y que aparezcan solo como 1 en el master.
+        
+        git rebase master  
         
     Ver la situación de los ficheros:
         git status
@@ -66,7 +69,8 @@ Usando git: siempre en la carpeta
         git commit --amend
             
     Para subir el cambio al fork de gitHub:
-        git push      
+        git push    
+        git push origin <rama a subir>
         
     Para ver historial de cambios:
         git log
