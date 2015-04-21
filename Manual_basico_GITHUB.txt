@@ -24,11 +24,11 @@ Colaborar en un repositorio:
         Ahora ya podéis usar la carpeta como un git normal y se os bajaran los 
         cambios de la principal .   
         
-    Para integrar los cambios  después de haber cambiados los forks (las copias vuestras)
+    Para integrar los cambios  después de haber cambiados los forks (las copias)
     Se hace clic en Pull Requests!, una vez el cambio se haya aprobado 
     aparecerá todo integrado.   
              
-Usando git: siempre en la carpeta
+Usando git: (en el directorio)
     Para crear una rama (solo la primera vez):
         git checkout -b <borrador>
         
@@ -77,5 +77,18 @@ Usando git: siempre en la carpeta
         para salir solo hay que escribir q
         
    
-        
-        
+Bajar solo un fichero:
+    En el navegador elegir la version raw y guardar como. 
+    Raw quita el marcado y te permite bajar el código como esta escrito originalmente.
+    
+Publicar repositorio como web:
+    Se debe tener un index.html es lo que servira github.
+    Crea una rama llamada gh-pages, esta indica a github que debe servir su contenido.
+        git checkout -b gh-pages
+    Sube el contenido  de la rama master
+        git push -u origin gh-pages
+    La página se muestra en:
+        http(s)://<username>.github.io/<projectname>.
+
+Enlace de interes
+[github pages](https://help.github.com/categories/github-pages-basics/)
