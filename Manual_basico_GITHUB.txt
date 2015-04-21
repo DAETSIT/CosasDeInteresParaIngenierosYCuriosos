@@ -85,7 +85,7 @@ Publicar repositorio como web:
     Se debe tener un index.html es lo que servira github.
     Crea una rama llamada gh-pages, esta indica a github que debe servir su contenido.
         git checkout -b gh-pages
-    Sube el contenido  de la rama master
+    Sube el contenido
         git push -u origin gh-pages
     La página se muestra en:
         http(s)://<username>.github.io/<projectname>.
