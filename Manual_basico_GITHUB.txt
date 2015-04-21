@@ -18,9 +18,10 @@ Colaborar en un repositorio:
     
     Después os hacéis una copia del repositorio con git clone y 
     la dirección que pone a la derecha para clonar.
+       ej:  git clone https://github.com/DAETSIT/Para_ingenieros_y_curiosos.git
     
     Una vez tengáis la carpeta hay que hacer:
-        git remote add upstream git@github.com:DAETSIT/ElNombreDelRepositorio.git
+        ej: git remote add upstream git@github.com:DAETSIT/ElNombreDelRepositorio.git
         Ahora ya podéis usar la carpeta como un git normal y se os bajaran los 
         cambios de la principal .   
         
@@ -75,10 +76,9 @@ Usando git: (en el directorio)
     Para ver historial de cambios:
         git log
         para salir solo hay que escribir q
-        
    
-Bajar solo un fichero:
-    En el navegador elegir la version raw y guardar como. 
+Bajar solo un fichero desde la web:
+    En el navegador: Seleccionar el fichero, elegir vista raw y guardar como. 
     Raw quita el marcado y te permite bajar el código como esta escrito originalmente.
     
 Publicar repositorio como web:
