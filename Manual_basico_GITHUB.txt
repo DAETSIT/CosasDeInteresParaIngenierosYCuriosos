@@ -16,14 +16,13 @@ Colaborar en un repositorio:
     Vais a la pagina web del repositorio, y hacéis un fork de el. 
     El fork crea una nueva rama que os permitirá editarlo. 
     
-    Después os hacéis una copia del repositorio con git clone y 
-    la dirección que pone a la derecha para clonar.
+    Hacer una copia del repositorio con git clone y la dirección que pone a la derecha para clonar.
        ej:  git clone https://github.com/DAETSIT/Para_ingenieros_y_curiosos.git
     
-    Una vez tengáis la carpeta hay que hacer:
+    Una vez se tiene la carpeta, hay que hacer:
         ej: git remote add upstream git@github.com:DAETSIT/ElNombreDelRepositorio.git
         Ahora ya podéis usar la carpeta como un git normal y se os bajaran los 
-        cambios de la principal .   
+        cambios de la principal.   
         
     Para integrar los cambios  después de haber cambiados los forks (las copias)
     Se hace clic en Pull Requests!, una vez el cambio se haya aprobado 
