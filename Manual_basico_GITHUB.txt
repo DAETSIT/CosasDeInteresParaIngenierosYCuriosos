@@ -16,7 +16,7 @@ Colaborar en un repositorio:
     Vais a la pagina web del repositorio, y hacéis un fork de el. 
     El fork crea una nueva rama que os permitirá editarlo. 
     
-    Hacer una copia del repositorio con git clone y la dirección que pone a la derecha para clonar.
+    Para hacer una copia del repositorio: con git clone y la dirección que aparece a la derecha.
        ej:  git clone https://github.com/DAETSIT/Para_ingenieros_y_curiosos.git
     
     Una vez se tiene la carpeta, hay que hacer:
@@ -24,19 +24,20 @@ Colaborar en un repositorio:
         Ahora ya podéis usar la carpeta como un git normal y se os bajaran los 
         cambios de la principal.   
         
-    Para integrar los cambios  después de haber cambiados los forks (las copias)
-    Se hace clic en Pull Requests!, una vez el cambio se haya aprobado 
-    aparecerá todo integrado.   
+    Para integrar los cambios  después de haber realizado lo cambios en los forks (las copias)
+    Se hace clic en Pull Requests!, una vez el cambio se haya aprobado aparecerá todo integrado.   
              
 Usando git: (en el directorio)
     Para crear una rama (solo la primera vez):
-        git checkout -b <borrador>
+        git checkout -b <borrador>      //cambia de rama
+        
+        git branch <borrador>           //se mantiene  en la rama
         
     Para cambiar de rama (siempre es mejor trabajar en una rama borrador):
        git checkout NombreDeLaRama
    
     Para volver al pasado (solo vuelves en modo lectura)
-       git checkout TrocitoDelCodigoQueDaGitLogEnCommit
+       git checkout Trocito_Del_Codigo_Que_Da_Git_Log_En_Commit
        ej:  git checkout 8461d8b0af
        para poder editar tienes que crear una rama con git branch NombreDeLaRama
     
@@ -54,6 +55,7 @@ Usando git: (en el directorio)
         
         git rebase master  
         
+        
     Ver la situación de los ficheros:
         git status
         
@@ -62,8 +64,9 @@ Usando git: (en el directorio)
     Añadir todos los ficheros del directorio:
         git add .
         
+        
     Para guardar el estado (hacerlo solo en la rama borrador principalmente):
-        git --commit-all -m 'comentario que identifique el cambio' 
+        git commit --all -m 'comentario que identifique el cambio' 
         
     Para deshacer el ultimo commit antes de subirlo:
         git commit --amend
