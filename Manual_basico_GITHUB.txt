@@ -84,11 +84,6 @@ Usando git:
         git push    
         git push origin <rama a subir>
         
-    Bajar cambios 
-        git pull    //actualiza los ficheros y los mergea
-        
-        git fetch   //actualiza los ficheros pero no los mergea
-        
     Para ver historial de cambios:
         git log
         para salir solo hay que escribir q
