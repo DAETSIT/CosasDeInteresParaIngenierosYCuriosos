@@ -27,7 +27,7 @@ Colaborar en un repositorio:
     Para integrar los cambios  después de haber realizado lo cambios en los forks (las copias)
     Se hace clic en Pull Requests!, una vez el cambio se haya aprobado aparecerá todo integrado.   
              
-Usando git: (en el directorio)
+Usando git: 
     Para crear una rama (solo la primera vez):
         git checkout -b <borrador>      //cambia de rama
         
@@ -66,7 +66,6 @@ Usando git: (en el directorio)
     Añadir todos los ficheros del directorio:
         git add .
         
-        
     Para guardar el estado (hacerlo solo en la rama borrador principalmente):
         git commit --all -m 'comentario que identifique el cambio' 
     
@@ -75,8 +74,8 @@ Usando git: (en el directorio)
     Restaurar fichero a la ultima version commiteada
         git checkout -- <fichero>
         
-    crear etiquetas para versiones (-s hace que se firmen usando en correo)
-        git tag -s <tagname>
+    crear etiquetas para versiones 
+        git tag -a v1.4 -m 'my version 1.4'
         
     Para deshacer el ultimo commit antes de subirlo:
         git commit --amend
@@ -84,6 +83,11 @@ Usando git: (en el directorio)
     Para subir el cambio al fork de gitHub:
         git push    
         git push origin <rama a subir>
+        
+    Bajar cambios 
+        git pull    //actualiza los ficheros y los mergea
+        
+        git fetch   //actualiza los ficheros pero no los mergea
         
     Para ver historial de cambios:
         git log
