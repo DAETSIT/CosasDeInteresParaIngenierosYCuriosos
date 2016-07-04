@@ -33,6 +33,9 @@ Usando git: (en el directorio)
         
         git branch <borrador>           //se mantiene  en la rama
         
+    Eliminar rama
+        git branch -d  <borrador>
+        
     Para cambiar de rama (siempre es mejor trabajar en una rama borrador):
        git checkout NombreDeLaRama
    
@@ -48,13 +51,12 @@ Usando git: (en el directorio)
         git pull upstream master
         git fetch
         
-    Fusionar la rama borrador con la master(añadir a master los cambio):
+    Fusionar la rama borrador con la rama en la que estas(añadir a master los cambio):
         git merge --squash <borrador>
             la opción --squash es para  comprimir las etiquetas en la 
             rama borrador y que aparezcan solo como 1 en el master.
         
         git rebase master  
-        
         
     Ver la situación de los ficheros:
         git status
@@ -67,6 +69,14 @@ Usando git: (en el directorio)
         
     Para guardar el estado (hacerlo solo en la rama borrador principalmente):
         git commit --all -m 'comentario que identifique el cambio' 
+    
+        git commit -a -m 'comentario que identifique el cambio' 
+        
+    Restaurar fichero a la ultima version commiteada
+        git checkout -- <fichero>
+        
+    crear etiquetas para versiones (-s hace que se firmen usando en correo)
+        git tag -s <tagname>
         
     Para deshacer el ultimo commit antes de subirlo:
         git commit --amend
