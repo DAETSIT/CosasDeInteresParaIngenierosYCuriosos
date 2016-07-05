@@ -43,7 +43,7 @@ Usando git:
     Para volver al pasado (solo vuelves en modo lectura)
        git checkout <Trocito_Del_Codigo_Que_Da_Git_Log_En_Commit>
        ej:->  git checkout 8461d8b0af
-       para poder editar tienes que crear una rama con git branch NombreDeLaRama
+       para poder editar tienes que crear una rama con git branch <Nombre_De_La_Rama> 
     
     Listar las ramas y ver cual esta activa (activa => *):
         git branch
