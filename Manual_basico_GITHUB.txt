@@ -30,19 +30,19 @@ Colaborar en un repositorio:
              
 Usando git: 
     Para crear una rama (solo la primera vez):
-        git checkout -b <Nombre_De_La_Rama>      //cambia de rama
+        git checkout -b <Nombre_De_La_Rama>      //crea y cambia de rama
         
-        git branch <Nombre_De_La_Rama>           //se mantiene  en la rama
+        git branch <Nombre_De_La_Rama>           //se mantiene en la rama
         
     Eliminar rama
-        git branch -d  <Nombre_De_La_Rama>
+        git branch -d  <Nombre_De_La_Rama>  //no borra el pasado
         
     Para cambiar de rama (siempre es mejor trabajar en una rama borrador):
        git checkout <Nombre_De_La_Rama>
    
     Para volver al pasado (solo vuelves en modo lectura)
        git checkout <Trocito_Del_Codigo_Que_Da_Git_Log_En_Commit>
-       ej:->  git checkout 8461d8b0af
+       ej:->  git checkout 8461d8b0af  //no hace falta copiar todo solo con un trozo lo coge
        para poder editar tienes que crear una rama con git branch <Nombre_De_La_Rama> 
     
     Listar las ramas y ver cual esta activa (activa => *):
@@ -50,7 +50,8 @@ Usando git:
         
     Fusionar la rama Master con el principal web(upstream)(bajar los cambios):
         git pull upstream master
-        git fetch
+        
+        git fetch  //no mergea los cambios hay que hacerlo manualmente
         
     Fusionar la rama borrador con la rama en la que estas(añadir a master los cambio):
         git merge --squash <Nombre_De_La_Rama>
@@ -83,7 +84,8 @@ Usando git:
             
     Para subir el cambio al fork de gitHub:
         git push    
-        git push origin <Rama_A_Subir>
+        
+        git push origin <Rama_A_Subir>  //subir rama distinta
         
     Para ver historial de cambios:
         git log
