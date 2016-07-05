@@ -48,8 +48,9 @@ Usando git:
     Listar las ramas y ver cual esta activa (activa => *):
         git branch
         
-    Fusionar la rama Master con el principal web(upstream)(bajar los cambios):
-        git pull upstream master
+   Bajar los cambios del servidor a local:
+        git pull <Nombre_De_La_Rama>
+        ej: git pull upstream master // Fusionar la rama Master con el principal web(upstream)
         
         git fetch  //no mergea los cambios hay que hacerlo manualmente
         
