@@ -55,9 +55,9 @@ Usando git:
     Fusionar la rama borrador con la rama en la que estas(añadir a master los cambio):
         git merge --squash <Nombre_De_La_Rama>
             la opción --squash es para  comprimir las etiquetas en la 
-            rama borrador y que aparezcan solo como 1 en el master.
+            rama borrador y que aparezcan solo como 1 en la rama desde la que se ejecuta.
         
-        git rebase master  //Master
+        git rebase master  //Master actualiza
         
     Ver la situación de los ficheros:
         git status
@@ -78,7 +78,7 @@ Usando git:
     crear etiquetas para versiones 
         git tag -a v1.4 -m '<Comentario_Que_Identifique_La_Version>'
         
-    Para deshacer el ultimo commit antes de subirlo:
+    Para deshacer el ultimo commit:
         git commit --amend
             
     Para subir el cambio al fork de gitHub:
